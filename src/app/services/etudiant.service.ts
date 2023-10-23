@@ -19,4 +19,8 @@ export class EtudiantService {
     return this.httpClient.delete('http://localhost:3031/etudiant/delete/'+id);
   }
 
+  addEtudiant(etudiant: any) {
+         return this.httpClient.post('http://localhost:3031/etudiant/new ', etudiant)
+      }
+
 }

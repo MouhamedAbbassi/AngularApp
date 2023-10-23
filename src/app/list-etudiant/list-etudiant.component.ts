@@ -9,7 +9,7 @@ import { EtudiantService } from '../services/etudiant.service';
 export class ListEtudiantComponent {
   etudiants: any;
 
-  constructor(private es: EtudiantService) { }
+  constructor(private es: EtudiantService ) { }
 
   ngOnInit(): void {
     this.es.getAllData().subscribe((response) => {this.etudiants = response})

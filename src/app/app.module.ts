@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ListEtudiantComponent } from './list-etudiant/list-etudiant.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { DeleteEtudiantComponent } from './delete-etudiant/delete-etudiant.component';
+import { AddEtudiantComponent } from './add-etudiant/add-etudiant.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +20,14 @@ import { DeleteEtudiantComponent } from './delete-etudiant/delete-etudiant.compo
     RegisterComponent,
     FooterComponent,
     ListEtudiantComponent,
-    DeleteEtudiantComponent
+    DeleteEtudiantComponent,
+    AddEtudiantComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
