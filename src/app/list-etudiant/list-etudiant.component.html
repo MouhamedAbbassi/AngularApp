@@ -11,17 +11,20 @@
                         <tr>
 
                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                Product Name
+                                 First Name
                             </th>
                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                Category
+                                Last Name
                             </th>
                             <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                Price
+                                Ecole
                             </th>
+                            <th scope="col" class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                             Birthdate
+                          </th>
                             <th scope="col" class="p-4">
                               <a routerLink="/new" type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-                                Add etudiant
+                                Add Etudiant
                               </a>                            </th>
                         </tr>
                     </thead>
@@ -32,10 +35,14 @@
 
                             <td class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ etudiants.nomEt }}</td>
                             <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{ etudiants.prenomEt }}</td>
-                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{ etudiants.idEtudiant }}</td>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{ etudiants.ecole }}</td>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-500 whitespace-nowrap dark:text-white">{{ etudiants.dateNaissance }}</td>
                              <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                                <a routerLink="/delete/{{etudiants.idEtudiant}}" class="text-blue-600 dark:text-blue-500 hover:underline">Delete</a>
+                                <a style=" cursor: pointer"  class="text-blue-600 dark:text-blue-500 hover:underline" (click)="delete(etudiants.idEtudiant)">Delete</a>
                             </td>
+                            <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
+                              <a routerLink="/update" style=" cursor: pointer"  class="text-blue-600 dark:text-blue-500 hover:underline" (click)="delete(etudiants.idEtudiant)">Update</a>
+                          </td>
                         </tr>
 
                     </tbody>

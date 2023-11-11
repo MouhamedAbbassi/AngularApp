@@ -9,9 +9,9 @@ import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListEtudiantComponent } from './list-etudiant/list-etudiant.component';
 import { HttpClientModule } from  '@angular/common/http';
-import { DeleteEtudiantComponent } from './delete-etudiant/delete-etudiant.component';
-import { AddEtudiantComponent } from './add-etudiant/add-etudiant.component';
+ import { AddEtudiantComponent } from './add-etudiant/add-etudiant.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateEtudiantComponent } from './update-etudiant/update-etudiant.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,8 +20,8 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     FooterComponent,
     ListEtudiantComponent,
-    DeleteEtudiantComponent,
-    AddEtudiantComponent
+     AddEtudiantComponent,
+     UpdateEtudiantComponent
   ],
   imports: [
     BrowserModule,

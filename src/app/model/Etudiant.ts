@@ -5,5 +5,4 @@ export interface Etudiant{
   cin ?: number ;
   ecole ?:string;
   dateNaissance?:Date;
-
 }

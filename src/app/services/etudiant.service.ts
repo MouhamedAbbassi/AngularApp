@@ -7,7 +7,7 @@ import { Etudiant } from '../model/Etudiant';
 })
 export class EtudiantService {
 
-  private baseUrl = 'http://localhost:3031/etudiant/getAll';
+  private baseUrl = 'http://localhost:3031';
   constructor(private httpClient:HttpClient) { }
 
 
@@ -15,12 +15,16 @@ export class EtudiantService {
     return this.httpClient.get<Etudiant[]> ('http://localhost:3031/etudiant/getAll');
   }
 
-  deleteEtudiant(id:any) {
-    return this.httpClient.delete('http://localhost:3031/etudiant/delete/'+id);
-  }
-
   addEtudiant(etudiant: any) {
          return this.httpClient.post('http://localhost:3031/etudiant/new ', etudiant)
       }
 
+
+  deleteEtudiant(id:any) {
+    return this.httpClient.delete('http://localhost:3031/etudiant/delete/'+id);
+  }
+
+  updateEtudiant(id:any) {
+    return this.httpClient.delete('http://localhost:3031/etudiant/update/'+id);
+  }
 }
