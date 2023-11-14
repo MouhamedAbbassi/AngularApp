@@ -12,7 +12,7 @@ const routes: Routes = [
    {path:"register", component:RegisterComponent},
    {path:"listEtudiant", component:ListEtudiantComponent},
    {path:"new", component:AddEtudiantComponent},
-   {path:"update", component:UpdateEtudiantComponent},
+   {path:"update/:param", component:UpdateEtudiantComponent},
 
 ];
 

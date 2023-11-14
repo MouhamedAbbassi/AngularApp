@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { EtudiantService } from '../services/etudiant.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { UpdateEtudiantComponent } from '../update-etudiant/update-etudiant.component';
 
 @Component({
   selector: 'app-list-etudiant',
@@ -29,7 +30,7 @@ export class ListEtudiantComponent {
     },error =>{
       console.log(error);
     });
-
-
    }
+
+
 }

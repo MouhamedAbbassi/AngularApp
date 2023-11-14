@@ -10,7 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ListEtudiantComponent } from './list-etudiant/list-etudiant.component';
 import { HttpClientModule } from  '@angular/common/http';
  import { AddEtudiantComponent } from './add-etudiant/add-etudiant.component';
-import { FormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateEtudiantComponent } from './update-etudiant/update-etudiant.component';
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { UpdateEtudiantComponent } from './update-etudiant/update-etudiant.compo
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

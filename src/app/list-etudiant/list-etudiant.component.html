@@ -41,7 +41,8 @@
                                 <a style=" cursor: pointer"  class="text-blue-600 dark:text-blue-500 hover:underline" (click)="delete(etudiants.idEtudiant)">Delete</a>
                             </td>
                             <td class="py-4 px-6 text-sm font-medium text-right whitespace-nowrap">
-                              <a routerLink="/update" style=" cursor: pointer"  class="text-blue-600 dark:text-blue-500 hover:underline" (click)="delete(etudiants.idEtudiant)">Update</a>
+                              <a routerLink="/update" style=" cursor: pointer"  class="text-blue-600 dark:text-blue-500 hover:underline" [routerLink]="['/update',etudiants.idEtudiant]"
+                              >Update</a>
                           </td>
                         </tr>
 

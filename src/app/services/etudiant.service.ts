@@ -24,7 +24,12 @@ export class EtudiantService {
     return this.httpClient.delete('http://localhost:3031/etudiant/delete/'+id);
   }
 
-  updateEtudiant(id:any) {
-    return this.httpClient.delete('http://localhost:3031/etudiant/update/'+id);
+  updateEtudiant(id:any,etudiant: any ) {
+    return this.httpClient.put('http://localhost:3031/etudiant/update/'+id, etudiant);
   }
+
+  getIdEtudiant(id:any ) {
+    return this.httpClient.get('http://localhost:3031/etudiant/getId/'+id);
+  }
+
 }
